@@ -1,0 +1,68 @@
+@charset "utf-8";
+$orange:#f86b1b;
+ section{
+     width: 100%;
+    margin-bottom: 88px;
+ }
+ #sectionOne{
+     width: 100%;
+     display: flex;
+     flex-flow: row;
+     justify-content: center;
+     align-items: center;
+     background: #ddd;
+ }
+#sectionOne>p{
+    flex-grow: 1;
+    background: #007AFF;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+#sectionThree>ul{
+    width:90vw ;
+    margin: 0 auto;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#sectionThree>ul>li{
+    flex-grow: 0;
+    width: 30%;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    
+}
+#sectionThree>ul>li>img{
+    display: block;
+}
+#sectionThree>ul>li>a{
+     
+    color: #000;
+    display: block;
+}
+#sectionThree>#dddd>dl{
+    width:90vw ;
+    margin: 0 auto;
+   overflow: hidden;
+   margin-bottom: 1rem;
+    
+}
+#sectionThree>#dddd>dl>dt{
+    width: 90px;
+    float: left;
+    
+}
+#sectionThree>#dddd>dl>dd{
+    float: left;
+    margin-left: 2rem;
+    width: 60%;
+}
+#sectionThree>#dddd>dl>.ddO{
+    font-size: 0.8rem;
+    color: #999;
+}

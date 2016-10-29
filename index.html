@@ -4,63 +4,23 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
-		<style type="text/css">
-			body,html{
-				width: 100%;
-				height: 100%;
-				background: url(img/1.jpg) no-repeat center center;
-				background-size: cover;
-			}
-			header{
-				height:3rem;
-				width:100%;
-				
-				color: #fff;
-				font-weight: 600;
-			}
-			#headerOne{
-				display: flex;
-				flex-flow: row;
-				justify-content: center;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link href="css/swiper.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
-		<header>
-			<div id="headerOne">
-				<p>心里测试</p>
-			</div>
-		</header>
-		<section>
-			<p>下班的时候，你突然觉得肚子很饿，又刚好路过面包店，你这时候会想？</p>
-			<p><input type="radio" id="in1" name="aaa" /><span>先买一点吃</span></p>
-			<p><input type="radio" id="in2" name="aaa" /><span>头也不回的走过</span></p>
-			<p><input type="radio" id="in3" name="aaa" /><span>晚饭就吃面包了</span></p>
-			<p><input type="radio" id="in4" name="aaa" /><span>看一看有什么新品，有就买点，没有就走</span></p>
-			<div id="div"></div>
-		</section>
-		
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide"><img src="img/huoshenbei.jpg"/></div>
+		    <div class="swiper-slide"><img src="img/yingchao.jpg"/></div>
+		    <div class="swiper-slide"><img src="img/dejia.jpg"/></div>
+		    <div class="swiper-slide">
+		    	<img src="img/cup.jpg"/>
+		    	<p id="btn">开启足球之旅</p>
+		    </div>
+		  </div>
+		   <div class="swiper-pagination"></div>
+		</div>
 	</body>
-	<script type="text/javascript">
-		var html=document.getElementsByTagName("html")[0];
-		html.style.fontSize=window.offsetWidth/600*20+"px";
-		var in1=document.getElementById("in1");
-		var odiv=document.getElementById("div");
-		in1.onclick=function(){
-			var str="前生是艺术家，对每件事、每件作品都要尽善尽美，对自己的要求也越来越高，因做不到完美的作品而变得疯疯癫癫。后来把自己扣于屋内，足不出户，最后饿死屋内。"
-			odiv.innerHTML=str;
-		}
-		in2.onclick=function(){
-			var str="前生是一个军人，因为战败被敌方俘虏，严刑拷打，因不 肯开口说出情报出卖国家而受严厉的酷刑而死。"
-			odiv.innerHTML=str;
-		}
-		in3.onclick=function(){
-			var str="前生是一只流浪狗，常年流浪在外，后因风雪而冻晕在一家农户门口，因农户善良而被收留，最终在农户的照顾下安度了余生。"
-			odiv.innerHTML=str;
-		}
-		in4.onclick=function(){
-			var str="前生是一个好赌的乞丐，意外是到中奖的奖票，本以为有本钱可以应更多的钱了，但结果却是把所有的奖金都输掉了，还因此而欠下巨额债务而无法偿还北债主打死。"
-			odiv.innerHTML=str;
-		}
-	</script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
 </html>

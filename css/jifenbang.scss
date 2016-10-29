@@ -1,0 +1,43 @@
+@charset "utf-8";
+$orange:#f86b1b;
+
+
+ section{
+     width: 100%;
+    margin-bottom: 88px;
+ }
+ section>p{
+     display: flex;
+     flex-flow: row;
+     justify-content: center;
+     align-items: center;
+ }
+  section>p>span{
+      flex-grow: 1;
+      background: #007AFF;
+      color: #fff;
+      padding: 0.5rem 0;
+      text-align: center;
+  }
+ section>#sort>p{
+     display: flex;
+     flex-flow: row;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+ }
+ section>#sort>p:nth-child(odd){
+     background: #31B0D5;
+     color: #fff;
+ }
+ section>#sort>p>span{
+      width: 13.5vw;
+      display: block;
+
+      padding: 0.5rem 0;
+      text-align: center;
+      font-size: 0.5rem;
+  }
+ section>#sort>p>span:nth-child(2){
+     width: 20vw;
+ }
