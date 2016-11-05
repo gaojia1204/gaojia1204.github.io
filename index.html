@@ -1,26 +1,100 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
-		<link href="css/swiper.css" rel="stylesheet" type="text/css"/>
 	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body,html{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		#box{
+			width: 90%;
+			height: 90vh;
+			margin: 5vh auto;
+			background: #aaa;
+			border-radius:10px;
+		}
+		#box>p{
+			margin: 5px 10px;
+		}
+		#box1{
+			width: 98%;
+			height: 95.5%;
+			margin: .5% auto;
+			background: #000;
+			color: #fff;
+		}
+		#box1>p{
+		}
+	</style>
 	<body>
-		<div class="swiper-container">
-		  <div class="swiper-wrapper">
-		    <div class="swiper-slide"><img src="img/huoshenbei.jpg"/></div>
-		    <div class="swiper-slide"><img src="img/yingchao.jpg"/></div>
-		    <div class="swiper-slide"><img src="img/dejia.jpg"/></div>
-		    <div class="swiper-slide">
-		    	<img src="img/cup.jpg"/>
-		    	<p id="btn">开启足球之旅</p>
-		    </div>
-		  </div>
-		   <div class="swiper-pagination"></div>
+		<div id="box">
+			<p>我的简历</p>
+			<div id="box1">
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
 		</div>
+		<script type="text/javascript">
+			var box1=document.getElementById("box1");
+			var p=box1.getElementsByTagName("p");
+			read("姓名：杲佳",p[0],0)
+			read("年龄：23",p[1],500)
+			read("毕业院校：聊城大学计算机科学与技术",p[2],1000)
+			read("学历：本科",p[3],2700)
+			read("应聘职位： web前端工程师",p[4],3200)
+			read("工作经历：",p[5],4500)
+			read("2015.03-2015.07 浪潮北京电子信息有限公司  从事服务器组装、维修、调试等工作",p[6],5000)
+			read("2015.07-2016.05 青岛云商汇电子商务有限公司 运用photoshop、html、css、js、jquery、less进行pc端页面的布局;",p[7],9300)
+			read("运用bootstrap、swape、iscroll、angular、gulp、ionico、zepto进行移动端开发",p[8],16700)
+			read("2016.05-2016.10 青岛松立软件有限公司 运用bootstrap、swape、iscroll、angular、gulp、ionico、zepto进行移动端开发",p[9],22500)
+			read("项目经验：",p[10],30800)
+			read("电商网站：365家润",p[11],31300)
+			read("运用photoshop、html、css、js、jquery、less进行pc端页面的布局",p[12],32300)
+			read("移动端网站：车迷城",p[13],36800)
+			read("运用photoshop、html、css、js、jquery、less进行pc端页面的布局",p[14],37800)
+			read("移动端网站：慧停车",p[15],42300)
+			read("运用photoshop、html、css、js、jquery、less进行pc端页面的布局",p[16],43300)
+			read("个人项目：足球粉",p[17],47800)
+			read("运用photoshop、html、css、js、jquery、less进行pc端页面的布局",p[18],48800)
+			function read(str,object,time){
+				var i=0;
+				setTimeout(function(){
+					setInterval(function(){
+						if(i>str.length-1){
+							return;
+						}
+						var str1=str.slice(i,i+1);
+						object.innerHTML+=str1;
+						i++;
+						window.localStorage.dsds=str1.length;
+					},100)
+				},time)	
+			}
+		</script>
 	</body>
-	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
 </html>
